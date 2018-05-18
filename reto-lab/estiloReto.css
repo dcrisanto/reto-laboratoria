@@ -7,3 +7,12 @@ body {
   min-height: 75px;
   width: 50%;
 }
+button{
+  border-radius: 30px;
+  background-color: #ffdd99;
+    color: #66192c;
+    padding: 5px 3px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}

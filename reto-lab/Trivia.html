@@ -1,5 +1,6 @@
 <!-- !DOCTYPE html -->
 <html lang="es">
+    <link rel="stylesheet" href="estiloReto.css">
 <head>
   <meta charset="UTF-8">
   <title>Laboratrivia</title>
@@ -9,10 +10,14 @@
   <!-- CABECERA -->
   <header>
     <h1> 🌎 LABORATRIVIA 🌎 </h1>
+    <!--Botón de Inicio-->
+    <button type="button" onclick="principal()">Iniciar Trivia</button>
     <h3 id="bienvenida"> BIENVENID@ </h3><!-- Este elemento nos permite agregar el nombre del usuario -->
 
     <hr/>
   </header>
+  <!--Evaluar Quiz-->
+  <button onclick="evaluarQuiz()">Revisar</button>
   <!-- RESULTADOS -->
   <section>
     <div id="contenedorPrincipal"><!-- Nos permite ver el marcador -->
@@ -25,6 +30,6 @@
       </div><!-- Nos permite visualizar las respuestas incorrectas -->
     </div>
   </section>
-  <!-- script type="text/javascript" src="js/app.js"></script -->
+  <script type="text/javascript" src="trivia.js"></script>
 </body>
 </html>

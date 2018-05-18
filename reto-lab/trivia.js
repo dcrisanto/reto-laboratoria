@@ -1,15 +1,33 @@
-// Mandamos a llamar a los elmentos del HTML que se van a manipular
+// Funcion Principal
+var principal = function() {
+  var nombreUsuario = pedirNombre().toUpperCase();
+  mostrarEnPantalla("😊 Bienvenid@ " + nombreUsuario + " 😊");
+  var quiereIniciarPartida = preguntarSiQuiereIniciarPartida(nombreUsuario, 'Hola');
+  if (!quiereIniciarPartida){
+    mostrarEnPantalla("<h1>Gracias por visitarnos, nos vemos la próxima 😉 </h1>");
+    return;
+  }
+  // Mandamos a llamar a los elmentos del HTML que se van a manipular
 var saludarUsario = document.getElementById('bienvenida'); 
 var mostrarResultados = document.getElementById('contenedorPrincipal');
 var respuestasCorrectas = document.getElementById('respuestasCorrectas');
 var respuestasIncorrectas= document.getElementById('respuestasIncorrectas');
+}
 
+var pedirNombre = function(){
+  var nombreUsuario = prompt("Ingresa tu nombre:");
+  return nombreUsuario;
+}
 
-var nombreUsuario = prompt("Ingresa tu nombre:");
-saludarUsario.innerHTML = "😊 Bienvenid@ " + nombreUsuario + " 😊" ;
-
-var iniciarPartida = parseInt(prompt("Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No"));
-
+var preguntarSiQuiereIniciarPartida = function(nombreUsuario, param2) {
+  var quiereIniciarPartida = prompt(param2 + ' ' + nombreUsuario + ' ' + "Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No");
+  return quiereIniciarPartida;
+}
+var mostrarEnPantalla = function(content) {
+  var saludarUsario = document.getElementById('bienvenida');
+  saludarUsario.innerHTML = content;
+  return;
+}
 // Evaluamos las respuestas del usuario (para iniciar el juego)
 
 mostrarResultados.style.display = '';
