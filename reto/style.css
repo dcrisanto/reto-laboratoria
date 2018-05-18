@@ -1,0 +1,12 @@
+div {
+  width: 500px;
+  height: 600px;
+  margin: 5em 4em 3em 2em;
+  padding: 20px;
+  border: 10px solid pink;
+  background-color: green;
+  box-sizing:border-box;
+}
+h2{
+  display: inline;
+}

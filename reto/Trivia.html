@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="estiloReto.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia</title>
+  </head>
+  <body>
+    <h1>GEOTrivia</h1>
+    <section>
+        <nav>
+          <!--<a href="#" onclick="principal()">Iniciar</a>-->
+          <button type="button" onclick="principal()">Iniciar Trivia</button>
+        </nav>
+    </section>
+    <section class="headerWrapper">
+      <div class="insertName">
+      <div class="welcomeText">
+      </div>
+    </section>
+    <section class="preguntasTrivia">
+      <div class="quiz hidden">
+          <div class="questionsContainer">
+              <span class="question">Pregunta 1: ¿Cuál es la montaña más alta del mundo?</span>
+              <input type="radio" valor="alternativa1" name="altPre1" class="alternative" /> Manaslu
+              <input type="radio" valor="alternativa2" name="altPre1" class="alternative" /> Lhotse
+              <input type="radio" valor="alternativa3" name="altPre1" class="alternative correcta" /> Everest
+          </div>
+          <div class="questionsContainer">
+              <span class="question">Pregunta 2: ¿Cuál es el río más largo del mundo?</span>
+              <input type="radio" valor="alternativa1" name="altPre2" class="alternative" /> Río de la Plata
+              <input type="radio" valor="alternativa2" name="altPre2" class="alternative correcta" /> Amazonas
+              <input type="radio" valor="alternativa3" name="altPre2" class="alternative" /> San Francisco
+          </div>
+          <div class="questionsContainer">
+              <span class="question">Pregunta 3: ¿Cuál es el país más poblado del mundo?</span>
+              <input type="radio" valor="alternativa1" name="altPre3" class="alternative correcta" /> China
+              <input type="radio" valor="alternativa2" name="altPre3" class="alternative" /> India
+              <input type="radio" valor="alternativa3" name="altPre3" class="alternative" /> EEUU
+          </div>
+          <button onclick="evaluarQuiz()">Revisar</button>
+      </div>
+      <div class="responseCorrectas"></div>
+      <div class="responseUsuario"></div>
+          <img src="imagen/globo.png" width="460" height="345">
+    </section>
+
+    <script type="text/javascript" src="trivia.js"></script>
+  </body>
+</html>

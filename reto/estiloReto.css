@@ -1,0 +1,49 @@
+body{
+  background-color: #adebad;
+  width: 500px;
+  padding: 2px;
+}
+h1{
+  background-color: #dfbf9f;
+  border-radius: 20px;
+  border: 10px outset #196619;
+  text-align: center;
+  color: #196619;
+  width: 800px;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin: 2px 250px;
+}
+button{
+  border-radius: 50px;
+  background-color: #ffdd99;
+    color: #196619;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px 600px;
+    cursor: pointer;
+
+}
+img{
+  margin: 2px 450px;
+}
+
+.hidden {
+  display: none;
+}
+
+.question {
+  display: block;
+  font-size: larger;
+  margin: 10px 0px 8px 5px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: yellow;
+}
+
+.error {
+  background-color: red;
+}
