@@ -9,12 +9,24 @@
 <body>
   <!-- CABECERA -->
   <header>
-    <h1> 🌎 LABORATRIVIA saaaasss🌎 </h1>
+    <h1> 🌎 LABORATRIVIA🌎 </h1>
+    <h3 id="bienvenida"> BIENVENID@ </h3><!-- Este elemento nos permite agregar el nombre del usuario -->
+    <hr/> 
     <!--Botón de Inicio-->
     <button type="button" onclick="principal()">Iniciar Trivia</button>
-    <h3 id="bienvenida"> BIENVENID@ </h3><!-- Este elemento nos permite agregar el nombre del usuario -->
-
-    <hr/>
+    <!--Ingreso de Datos-->
+    <div class="datos hidden">
+    <form method="post">
+        Ingresa tu nombre:<br>
+        <input id="nombreUsuario" type="text" /><br>
+        <div class="iniciarPartida">
+          ¿Quieres iniciar la partida?:<br> 
+          <input type="radio" name="option" class="empezar"/>SI<br>
+          <input type="radio" name="option" class="terminar"/>NO<br>
+        </div>
+    </form>
+    <button onclick="obtenerNombreUsuario()">Enviar Respuesta de Inicio</button>
+    </div>
   </header>
   <!--Evaluar Quiz-->
   <button onclick="evaluarQuiz()">Revisar</button>
