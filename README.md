@@ -1,4 +1,4 @@
-# Reto Trivia: Reloaded
+# Reto Trivia: Reloaded xxxxxxxxxxx
 - Este proyecto se realizo en la etapa de Preadmision
 # Objetivo
 - Solicitar los datos del usuario, y dependiente de las respuestas, se obtendrá las respuestas correctas e incorrectas.
