@@ -15,5 +15,5 @@ var obtenerNombreUsuario= function (){
     document.getElementById("bienvenida").innerHTML=("😊 Bienvenid@ " + valor + " 😊");
     return valor;
 }
-// Evaluamos las respuestas del usuario (para iniciar el juego)
+// Evaluamos las respuestas del usuario para iniciar el juego
 //var evaluarIniciar=function(){
